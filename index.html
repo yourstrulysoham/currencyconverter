@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter by yourstulysoham</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Currency Converter by Soham Pattanayak</h1>
+  </header>
+
+  <main>
+    <div class="converter">
+      <h2>Convert Currency</h2>
+      <form id="converter-form">
+        <div class="form-group">
+          <label for="amount">Amount:</label>
+          <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+        </div>
+
+        <div class="form-group">
+          <label for="from-currency">From:</label>
+          <select id="from-currency" name="from-currency" required>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="JPY">JPY</option>
+            <option value="GBP">GBP</option>
+            <option value="CNY">CNY</option>
+            <option value="INR">INR</option>
+            <option value="AED">AED</option>
+            <option value="BDT">BDT</option>
+            <option value="LKR">LKR</option>
+            <option value="PKR">PKR</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="to-currency">To:</label>
+          <select id="to-currency" name="to-currency" required>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="JPY">JPY</option>
+            <option value="GBP">GBP</option>
+            <option value="CNY">CNY</option>
+            <option value="INR">INR</option>
+            <option value="AED">AED</option>
+            <option value="BDT">BDT</option>
+            <option value="LKR">LKR</option>
+            <option value="PKR">PKR</option>
+          </select>
+        </div>
+
+        <button type="submit">Convert</button>
+      </form>
+
+      <div class="result">
+        <h3>Converted Amount:</h3>
+        <p id="result">Please enter an amount and select currencies to see the conversion result.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Currency Converter. All rights reserved.</p>
+    <button onclick="window.location.href='mailto:mail.sohampattanayak@gmail.com';">Contact Us</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
